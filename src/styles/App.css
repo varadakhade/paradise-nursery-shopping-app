@@ -1,0 +1,133 @@
+.landing-container {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.landing-overlay-card {
+  background: rgba(18, 43, 31, 0.78);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-xl);
+  padding: 3.5rem 3rem;
+  max-width: 720px;
+  width: 100%;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: cardFadeIn 0.8s ease-out;
+}
+
+.landing-logo-badge {
+  background: linear-gradient(135deg, #52b788 0%, #2d6a4f 100%);
+  color: #ffffff;
+  width: 76px;
+  height: 76px;
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 25px rgba(82, 183, 136, 0.35);
+}
+
+.landing-title {
+  font-family: var(--font-serif);
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+}
+
+.landing-tagline {
+  font-size: 1.25rem;
+  color: #95d5b2;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.landing-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 580px;
+}
+
+.landing-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.landing-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-full);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.btn-get-started {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #52b788 0%, #2d6a4f 100%);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1.05rem 2.75rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 8px 25px rgba(45, 106, 79, 0.4);
+  letter-spacing: 0.3px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-get-started:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(45, 106, 79, 0.55);
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .landing-overlay-card {
+    padding: 2.5rem 1.5rem;
+  }
+  .landing-title {
+    font-size: 2.3rem;
+  }
+  .landing-tagline {
+    font-size: 1.05rem;
+  }
+  .landing-description {
+    font-size: 0.98rem;
+  }
+  .btn-get-started {
+    width: 100%;
+    justify-content: center;
+    padding: 0.95rem 1.5rem;
+    font-size: 1.1rem;
+  }
+}

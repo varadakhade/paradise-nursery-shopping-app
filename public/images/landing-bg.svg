@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081c15" />
+      <stop offset="40%" stop-color="#1b4332" />
+      <stop offset="80%" stop-color="#2d6a4f" />
+      <stop offset="100%" stop-color="#081c15" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#52b788" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#081c15" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="leafPattern" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M60 10 C30 35 30 85 60 110 C90 85 90 35 60 10 Z" fill="none" stroke="#74c69d" stroke-width="1.2" opacity="0.12" />
+      <path d="M60 10 L60 110" stroke="#74c69d" stroke-width="0.8" opacity="0.12" />
+      <path d="M10 60 C35 30 85 30 110 60 C85 90 35 90 10 60 Z" fill="none" stroke="#52b788" stroke-width="1.2" opacity="0.12" />
+      <path d="M10 60 L110 60" stroke="#52b788" stroke-width="0.8" opacity="0.12" />
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  <rect width="100%" height="100%" fill="url(#glow)" />
+  <rect width="100%" height="100%" fill="url(#leafPattern)" />
+</svg>
